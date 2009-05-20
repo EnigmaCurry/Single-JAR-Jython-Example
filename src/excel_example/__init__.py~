@@ -1,0 +1,11 @@
+import org.apache.poi.hssf.usermodel.HSSFWorkbook as Workbook
+
+def main():
+    f = open("jython-example.xls","w")
+    wb = Workbook()
+    sheet = wb.createSheet("Test")
+    row = sheet.createRow(0)
+    cell = row.createCell(0)
+    cell.setCellValue("Test")
+    wb.write(f)
+    f.close()
