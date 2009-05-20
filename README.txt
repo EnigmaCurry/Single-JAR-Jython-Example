@@ -58,3 +58,34 @@ this package is organized:
     one-jar-license.txt. In order to comply with this license, the
     license is automatically built into any .jar that this package builds.
 
+
+
+Building Jython:
+  
+    Jython is already included in this distribution, but when new
+    versions of Jython come out, you may wish to upgrade. These are
+    the instructions you'll need for modifying the Jython jar that the
+    Jython installer builds so that it will work in a One-Jar
+    environment:
+
+    * Download the latest Jython installer (right now it's 2.5rc2) :
+
+        wget http://downloads.sourceforge.net/jython/jython_installer-2.5rc2.jar
+
+    * Extract the installer, there's no need to run it:
+        
+	mkdir jython-exploded
+	cd jython-exploded
+	unzip ../jython_installer-2.5rc2.jar
+
+    * Add the Lib/ folder to a new jython jar:
+        
+	cp jython.jar jython-full.jar
+	zip -r jython-full.jar Lib/
+
+    * jython-full.jar is now a complete Jython install in a single jar
+      file.
+      
+      Should be about 11MB.
+
+    
