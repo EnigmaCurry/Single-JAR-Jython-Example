@@ -58,6 +58,15 @@ this package is organized:
     one-jar-license.txt. In order to comply with this license, the
     license is automatically built into any .jar that this package builds.
 
+Building the app:
+
+    You need Apache Ant installed. It should be sufficient to just 
+    run 'ant' in the same directory as build.xml
+    
+    Ant should create a new jar file called JythonExcelExample.jar
+    which you can then run:
+
+        java -jar JythonExcelExample.jar
 
 
 Building Jython:
