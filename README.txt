@@ -6,7 +6,7 @@
 ################################################################################
 
 The only thing that this application does is spit out a silly Excel
-file using the Apache POI java library. It's means to be an example of
+file using the Apache POI java library. It means to be an example of
 how to package your own Jython application in a manner that requires
 no external dependancies other than a JVM on the host computer.
 
